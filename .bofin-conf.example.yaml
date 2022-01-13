@@ -1,0 +1,18 @@
+slack_api_token: "TESTING"
+slack_user_id: "U01MUN25JT0"
+slack_team_channel_id: "C01MYCX6W1K"
+boot_env:
+  general:
+    boot_dir: "/home/ubuntu/projects/boot"
+    adm_client_id: "client-id"
+    adm_client_secret: "client-secret"
+  weblink:
+    wendigo:
+      weblink_portal: "wendigo-mountain.stagingadministrateweblink.com"
+      refresh_token: "wendigo-refresh-token"
+    mercury:
+      weblink_portal: "mercury-weblink2.stagingadministrateweblink.com"
+      refresh_token: "mercury-refresh-token"
+    lmsdemo:
+      weblink_portal: "lmsdemo-pepsi.stagingadministrateweblink.com"
+      long_life_token: "pepsi-long-life-token"
