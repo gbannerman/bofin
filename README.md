@@ -14,7 +14,7 @@ curl https://raw.githubusercontent.com/gbannerman/bofin/main/install.sh | bash
 
 During install, a `.bofin-conf.yaml` file will be created in your home directory. You should update this with the required information.
 
-You should also create a `.env.template` file in your `boot_dir`. This template will be used to generate your `.env` file when the `bootenv` command is run. The following variables should be added to your `.env.example` and will be replaced when generating your `.env`:
+You should also create a `.env.template` file in your `boot_dir`. This template will be used to generate your `.env` file when boot-related command is run. The following variables should be added to your `.env.example` and will be replaced when generating your `.env`:
 
 - {{.ApiAccessToken}}
 - {{.WeblinkStagingDomain}}

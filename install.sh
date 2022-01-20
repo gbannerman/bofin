@@ -41,6 +41,18 @@ check_for_config_file() {
     fi
 }
 
+setup_autocomplete() {
+    if [ -n "$_CLI_ZSH_AUTOCOMPLETE_HACK" ]; then
+        return 0
+    fi
+
+    if hash zsh 2>/dev/null; then
+        echo "PROG=bofin" >> $HOME/.zshrc
+        echo "_CLI_ZSH_AUTOCOMPLETE_HACK=1" >> $HOME/.zshrc
+        echo "source <(curl -s https://raw.githubusercontent.com/urfave/cli/b27d899434f4d1f0e2dd748e3f661d8ec230f3f2/autocomplete/zsh_autocomplete)" >> $HOME/.zshrc
+    fi
+}
+
 main() {
     local INSTALL_DIR
     INSTALL_DIR="$(install_dir)"
@@ -52,6 +64,8 @@ main() {
     sudo mv "$INSTALL_DIR/bofin" /usr/local/bin/bofin
 
     check_for_config_file
+
+    setup_autocomplete
 
     echo "Bofin installed successfully!"
 }
