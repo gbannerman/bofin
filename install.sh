@@ -4,7 +4,7 @@
 # .env template
 
 latest_version() {
-  echo "v1.0.0"
+  echo "v1.1.0"
 }
 
 install_dir() {
