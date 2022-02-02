@@ -10,7 +10,7 @@ type RefreshResponse struct {
 	AccessToken string `json:"access_token"`
 }
 
-func refreshCoreToken(config *Config, instance string) (*RefreshResponse, error) {
+func RefreshCoreToken(config *Config, instance string) (*RefreshResponse, error) {
 	var refreshToken = config.BootEnvConfig.Weblink[instance].RefreshToken
 
 	data := url.Values{

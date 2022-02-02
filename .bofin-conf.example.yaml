@@ -1,5 +1,5 @@
-slack_api_token: "TESTING"
-slack_user_id: "U01MUN25JT0"
+slack_api_token: "UPDATE_ME"
+slack_user_id: "UPDATE_ME"
 slack_team_channel_id: "C01MYCX6W1K"
 boot_env:
   general:
